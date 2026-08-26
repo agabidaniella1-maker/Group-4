@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 48px;
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+        .logo {
+            color: #222;
+            font-size: 24px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            gap: 28px;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #42b354;
+        }
+
+        .sign-up {
+            padding: 11px 22px;
+            border: 0;
+            border-radius: 999px;
+            background-color: #42b354;
+            color: #fff;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-wrap: wrap;
+                gap: 18px;
+                padding: 18px 24px;
+            }
+
+            nav {
+                order: 3;
+                width: 100%;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 14px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a class="logo" href="#">GF</a>
+        <nav aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#benefits">Benefits</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="sign-up" type="button">Sign Up</button>
+    </header>
+</body>
+</html>
