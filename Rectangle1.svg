@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Decorative rectangle">
+  <rect width="1200" height="800" fill="#ffffff"/>
+  <rect width="1200" height="800" fill="#7eb56b" opacity="0.85"/>
+  <rect y="530" width="1200" height="270" fill="#346847" opacity="0.9"/>
+  <polygon points="0,600 150,520 420,600 650,520 1200,600 1200,800 0,800" fill="#4a9558"/>
+</svg>

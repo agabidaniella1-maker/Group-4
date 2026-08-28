@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Crop illustration">
+  <rect width="1200" height="800" fill="#e0e9c5"/>
+  <ellipse cx="350" cy="370" rx="260" ry="210" fill="#60a65e"/>
+  <ellipse cx="760" cy="330" rx="330" ry="220" fill="#8ac266"/>
+  <rect x="0" y="520" width="1200" height="280" fill="#6f914a"/>
+  <g stroke="#496f35" stroke-width="18" stroke-linecap="round">
+    <line x1="520" y1="250" x2="520" y2="660"/>
+    <line x1="380" y1="350" x2="650" y2="350"/>
+    <line x1="435" y1="430" x2="610" y2="430"/>
+  </g>
+</svg>
