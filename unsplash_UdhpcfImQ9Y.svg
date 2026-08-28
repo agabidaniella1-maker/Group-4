@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="Agriculture background">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#a7c29a"/>
+      <stop offset="100%" stop-color="#799d72"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <rect y="650" width="1600" height="350" fill="#0f401f" opacity="0.85"/>
+  <polygon points="0,650 200,560 400,650 700,560 1600,650 1600,1000 0,1000" fill="#346847" opacity="0.85"/>
+  <polygon points="0,750 150,650 420,750 650,650 1600,750 1600,1000 0,1000" fill="#4a9558" opacity="0.9"/>
+</svg>

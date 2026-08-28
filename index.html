@@ -6,9 +6,7 @@
     <title>Home</title>
     <script src="./tailwind.js"></script>
   </head>
-  <body
-    class="min-h-screen bg-white text-[#17152b] font-[Arial,sans-serif]"
-  >
+  <body class="min-h-screen bg-white text-[#17152b] font-[Arial,sans-serif]">
     <header
       class="relative z-[5] grid min-h-[76px] grid-cols-[1fr_auto_1fr] items-center border-b border-[#eceaf5] bg-white px-[6%] max-[700px]:grid-cols-[1fr_auto] max-[700px]:gap-4 max-[700px]:px-[5%]"
     >
@@ -16,7 +14,7 @@
         class="text-xl font-bold tracking-[0.08em] text-[#42b354] no-underline"
         href="#home"
         aria-label="Home"
-        >GDF</a
+        >GF</a
       >
 
       <nav
@@ -59,18 +57,92 @@
 
     <main
       id="home"
-      class="absolute left-0 right-0 top-0 z-[4] flex h-[75vh] w-full items-center justify-center bg-[image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('./unsplash_UdhpcfImQ9Y.png')] bg-[position:center_top] bg-[size:100%_75vh] bg-no-repeat"
+      class="absolute left-0 right-0 top-0 z-[4] flex h-[75vh] w-full items-center justify-center bg-no-repeat bg-cover bg-center"
+      style="
+        background-image:
+          linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+          url(&quot;./cow.png&quot;);
+      "
     >
-      <img
-        class="block h-auto max-h-[75vh] w-auto max-w-full opacity-100 visible"
-        src="Rectangle1.png"
-        alt=""
-      />
       <h3
         class="absolute left-[4%] top-1/2 w-[60%] -translate-y-1/2 text-left text-4xl font-bold leading-tight text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] sm:text-5xl"
       >
         Discover the Vital Power of Agriculture
-          </h3>
+      </h3>
+      <h5
+        class="absolute left-[4%] top-[calc(50%+5rem)] w-[60%] text-left text-lg font-semibold text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"
+      >
+        We are of help to farmers and consumers
+      </h5>
+      <div class="absolute left-[4%] top-[calc(50%+7.5rem)] flex gap-4">
+        <button
+          class="rounded-md bg-[#1a4d2e] px-6 py-3 text-sm font-semibold text-white no-underline hover:bg-[#0d2b1a] focus-visible:bg-[#0d2b1a] transition-colors"
+        >
+          Discover more
+        </button>
+        <button
+          class="rounded-md bg-white px-6 py-3 text-sm font-semibold text-black no-underline hover:bg-gray-100 focus-visible:bg-gray-100 transition-colors"
+        >
+          Learn more
+        </button>
+      </div>
     </main>
+
+    <section class="w-full px-[6%] py-16 mt-[60vh]">
+      <div class="flex flex-col items-center gap-6">
+        <p class="text-lg font-bold text-[#17152b] text-center">
+          We are specialized in the sales of fertilizers and animal feeds.
+        </p>
+        <div class="flex items-center w-full">
+          <img
+            src="chi.png"
+            alt="chick"
+            class="h-40 w-96 flex-shrink-0 object-cover"
+          />
+          <img src="co.png" alt="co" class="h-40 w-96 mx-auto object-cover" />
+          <img
+            src="cof.png"
+            alt="cofee"
+            class="h-40 w-96 flex-shrink-0 object-cover"
+          />
+        </div>
+      </div>
+    </section>
+    <div class="w-full h-px bg-[#17152b] -mt-4 mb-8"></div>
+
+    <section class="w-full  py-8">
+      <div class="flex items-center px-[6%] gap-8">
+        <img
+          src="corn.png"
+          alt="cornc:\Users\TGDI TRAINING\Downloads\Frame 94.pngimage.pngimage.pngimage.pngimage.pngimage.png"
+          class="h-80 w-1/2 object-cover flex-shrink-0"
+        />
+        <div class="max-w-xs -mt-48">
+          <p class="text-2xl font-bold text-[#17152b]">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            Why agriculture matters<br />to you
+          </p>
+          <p class="mt-4 text-base text-[#17152b] text-bold">
+            Agriculture is the backbone of our society, providing us with the
+            food we eat, the clothes we wear, and the materials we use in our
+            daily lives. It plays a crucial role in sustaining our communities
+            and economies, ensuring that we have access to essential resources.
+            By supporting agriculture, we contribute to the well-being of
+            farmers, promote sustainable practices, and help secure a stable
+            food supply for future generations.
+          </p>
+        </div>
+      </div>
+      <br>
+      <hr class="w-full-100% h-70px bg-[#17152b] -mt-0 mb-8">
+      <h1 class=" text-center font-bold font-size-larger text-[24px]">Testimonials</h1>
+      <img src="man.png" alt="man" class="flex px-[6%]">
+      <p class="mx-20 px[6%]">This product has <br> helped my journey <br> as a farmer <br> <br> _Desmond.</p> <br>br <img src="male.png" alt="male" class="flex justify-center">
+    </section>
   </body>
 </html>
