@@ -4,141 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <style>
-      :root {
-        --primary-color: #42b354;
-        --text-color: #ffffff;
-        --border-color: rgba(255, 255, 255, 0.2);
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        min-height: 100vh;
-        background-color: #000000;
-        background-image: url("./bg.png");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        color: var(--text-color);
-        font-family: Arial, sans-serif;
-      }
-
-      .site-header {
-        display: grid;
-        grid-template-columns: 1fr auto 1fr;
-        align-items: center;
-        min-height: 76px;
-        padding: 0 6%;
-        border-bottom: 1px solid var(--border-color);
-      }
-
-      .logo {
-        color: #42b354;
-        font-size: 1.25rem;
-        font-weight: 700;
-        letter-spacing: 0.08em;
-        text-decoration: none;
-      }
-
-      .main-nav {
-        display: flex;
-        gap: 2rem;
-      }
-
-      .main-nav a {
-        position: relative;
-        color: var(--text-color);
-        font-size: 0.95rem;
-        text-decoration: none;
-      }
-
-      .main-nav a::after {
-        position: absolute;
-        right: 0;
-        bottom: -0.55rem;
-        left: 0;
-        height: 3px;
-        border-radius: 999px;
-        background-color: var(--primary-color);
-        content: "";
-        opacity: 0;
-        transform: scaleX(0.35);
-        transition: opacity 160ms ease, transform 160ms ease;
-      }
-
-      .main-nav a.active::after,
-      .main-nav a:focus-visible::after {
-        opacity: 1;
-        transform: scaleX(1);
-      }
-
-      .main-nav a:hover,
-      .main-nav a:focus-visible {
-        color: var(--primary-color);
-      }
-
-      .sign-up {
-        justify-self: end;
-        padding: 0.75rem 1.35rem;
-        border-radius: 999px;
-        background-color: #42b354;
-        color: #ffffff;
-        font-size: 0.95rem;
-        font-weight: 600;
-        text-decoration: none;
-      }
-
-      .sign-up:hover,
-      .sign-up:focus-visible {
-        background-color: #42b354;
-      }
-
-      @media (max-width: 700px) {
-        .site-header {
-          grid-template-columns: 1fr auto;
-          gap: 1rem;
-          padding: 1rem 5%;
-        }
-
-        .main-nav {
-          grid-column: 1 / -1;
-          grid-row: 2;
-          justify-content: center;
-          flex-wrap: wrap;
-          gap: 0.75rem 1.25rem;
-        }
-      }
-    </style>
+    <script src="./tailwind.js"></script>
   </head>
-  <body>
-    <header class="site-header">
-      <a class="logo" href="#home" aria-label="Home">GDF</a>
+  <body
+    class="min-h-screen bg-white text-[#17152b] font-[Arial,sans-serif]"
+  >
+    <header
+      class="relative z-[5] grid min-h-[76px] grid-cols-[1fr_auto_1fr] items-center border-b border-[#eceaf5] bg-white px-[6%] max-[700px]:grid-cols-[1fr_auto] max-[700px]:gap-4 max-[700px]:px-[5%]"
+    >
+      <a
+        class="text-xl font-bold tracking-[0.08em] text-[#42b354] no-underline"
+        href="#home"
+        aria-label="Home"
+        >GDF</a
+      >
 
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#products">Products</a>
-        <a href="#benefits">Benefits</a>
-        <a href="#contact">Contact</a>
+      <nav
+        class="flex gap-8 max-[700px]:col-span-2 max-[700px]:row-start-2 max-[700px]:justify-center max-[700px]:flex-wrap max-[700px]:gap-x-5 max-[700px]:gap-y-3"
+        aria-label="Main navigation"
+      >
+        <a
+          class="relative text-[0.95rem] text-[#17152b] no-underline after:absolute after:bottom-[-0.55rem] after:left-0 after:right-0 after:h-[3px] after:rounded-full after:bg-[#42b354] after:opacity-0 after:content-[''] after:transition-opacity focus-visible:text-[#42b354] focus-visible:after:opacity-100 hover:text-[#42b354]"
+          href="#home"
+          >Home</a
+        >
+        <a
+          class="relative text-[0.95rem] text-[#17152b] no-underline after:absolute after:bottom-[-0.55rem] after:left-0 after:right-0 after:h-[3px] after:rounded-full after:bg-[#42b354] after:opacity-0 after:content-[''] after:transition-opacity focus-visible:text-[#42b354] focus-visible:after:opacity-100 hover:text-[#42b354]"
+          href="#about"
+          >About</a
+        >
+        <a
+          class="relative text-[0.95rem] text-[#17152b] no-underline after:absolute after:bottom-[-0.55rem] after:left-0 after:right-0 after:h-[3px] after:rounded-full after:bg-[#42b354] after:opacity-0 after:content-[''] after:transition-opacity focus-visible:text-[#42b354] focus-visible:after:opacity-100 hover:text-[#42b354]"
+          href="#products"
+          >Products</a
+        >
+        <a
+          class="relative text-[0.95rem] text-[#17152b] no-underline after:absolute after:bottom-[-0.55rem] after:left-0 after:right-0 after:h-[3px] after:rounded-full after:bg-[#42b354] after:opacity-0 after:content-[''] after:transition-opacity focus-visible:text-[#42b354] focus-visible:after:opacity-100 hover:text-[#42b354]"
+          href="#benefits"
+          >Benefits</a
+        >
+        <a
+          class="relative text-[0.95rem] text-[#17152b] no-underline after:absolute after:bottom-[-0.55rem] after:left-0 after:right-0 after:h-[3px] after:rounded-full after:bg-[#42b354] after:opacity-0 after:content-[''] after:transition-opacity focus-visible:text-[#42b354] hover:text-[#42b354]"
+          href="#contact"
+          >Contact</a
+        >
       </nav>
 
-      <a class="sign-up" href="#sign-up">Sign up</a>
+      <a
+        class="justify-self-end rounded-full bg-[#42b354] px-[1.35rem] py-3 text-[0.95rem] font-semibold text-white no-underline hover:bg-[#42b354] focus-visible:bg-[#42b354]"
+        href="#sign-up"
+        >Sign up</a
+      >
     </header>
 
-    <script>
-      const navigationLinks = document.querySelectorAll(".main-nav a");
-
-      navigationLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-          navigationLinks.forEach((item) => item.classList.remove("active"));
-          link.classList.add("active");
-        });
-      });
-    </script>
+    <main
+      id="home"
+      class="absolute left-0 right-0 top-0 z-[4] flex h-[75vh] w-full items-center justify-center bg-[image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('./unsplash_UdhpcfImQ9Y.png')] bg-[position:center_top] bg-[size:100%_75vh] bg-no-repeat"
+    >
+      <img
+        class="block h-auto max-h-[75vh] w-auto max-w-full opacity-100 visible"
+        src="Rectangle1.png"
+        alt=""
+      />
+      <h3
+        class="absolute left-[4%] top-1/2 w-[60%] -translate-y-1/2 text-left text-4xl font-bold leading-tight text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] sm:text-5xl"
+      >
+        Discover the Vital Power of Agriculture
+          </h3>
+    </main>
   </body>
 </html>
